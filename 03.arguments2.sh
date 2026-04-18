@@ -5,7 +5,7 @@
 NAME1=$1
 NAME2=$2
 
-if [ $# -lt 2 ]: then
+if [ $# -lt 2 ]; then
 	echo "need to enter the arguments from out side like $0 <NAME1> < NAME2>"
 	exit 1
 fi
