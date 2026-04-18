@@ -2,6 +2,6 @@
 
 echo "what's you age:"
 
-read age
+read agee
 
 echo "my age is: $age"
