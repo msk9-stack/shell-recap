@@ -20,7 +20,7 @@ read -s name
 
 echo""
 
-echo "the highest double centuries was made by $name"
+echo "the highest double centuries was made by: $name"
 
 echo""
 
@@ -28,7 +28,7 @@ read -p "what was the highest score in the odi history ever: " score
 
 echo""
 
-echo "the highest score ever made in the odi history was $score"
+echo "the highest score ever made in the odi history was: $score"
 
 echo""
 
