@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "who hit the first double hundred in the cricket odi"
+echo "**Quiz on cricket**"
+
+echo "1.who hit the first double hundred in the cricket odi"
 
 echo""
 
@@ -8,11 +10,11 @@ read name
 
 echo""
 
-echo "the first double hundred was hit by: $name"
+echo "A= the first double hundred was hit by: $name"
 
 echo""
 
-echo "who made the highest double centuries in the cricket odi's"
+echo "2.who made the highest double centuries in the cricket odi's"
 
 echo""
 
@@ -20,15 +22,15 @@ read -s name
 
 echo""
 
-echo "the highest double centuries was made by: $name"
+echo "A= the highest double centuries was made by: $name"
 
 echo""
 
-read -p "what was the highest score in the odi history ever: " score
+read -p "3.what was the highest score in the odi history ever: " score
 
 echo""
 
-echo "the highest score ever made in the odi history was: $score"
+echo "A= the highest score ever made in the odi history was: $score"
 
 echo""
 
