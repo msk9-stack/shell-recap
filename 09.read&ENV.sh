@@ -5,7 +5,7 @@ printf "learning both read and ENV in this script\n"
 echo
 printf "let's see the read command\n"
 echo
-printf "read -s -p "enter your paasword: " password -->it is a security and you can not see your password while typing it\n'
+printf 'read -s -p "enter your paasword: " password -->it is a security and you can not see your password while typing it\n'
 echo 
 printf 'echo "$password" --> this will print your password (for practice purpose, dont use it in real environment\n'
 echo
