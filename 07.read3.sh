@@ -2,40 +2,44 @@
 
 echo "**Quiz on cricket**"
 
+echo ""
+
 echo "1.who hit the first double hundred in the cricket odi"
 
-echo""
+echo ""
 
 read name
 
-echo""
+echo ""
 
 echo "A= the first double hundred was hit by: $name"
 
-echo""
+echo ""
 
 echo "2.who made the highest double centuries in the cricket odi's"
 
-echo""
+echo ""
 
 read -s name
 
-echo""
+echo ""
 
 echo "A= the highest double centuries was made by: $name"
 
-echo""
+echo ""
 
 read -p "3.what was the highest score in the odi history ever: " score
 
-echo""
+echo ""
 
 echo "A= the highest score ever made in the odi history was: $score"
 
-echo""
+echo ""
 
 read -s -p "who is the king of cricket: " king
 
-echo""
+echo ""
 
 echo "king $king"
+
+echo ""
