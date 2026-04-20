@@ -22,7 +22,7 @@ printf "echo "$name" -->this will print the name kiran"
 echo
 printf "unset --> is a command to remove the env variable"
 echo
-echo"example"
+echo "example"
 echo
 printf "unset name=kiran"
 echo
