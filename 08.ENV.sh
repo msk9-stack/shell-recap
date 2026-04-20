@@ -19,7 +19,7 @@ echo "export -->is a command"
 echo 
 echo "gold_rate_gms -->is environmental variable, which was created by export command"
 echo 
-echo "echo "\$gold_rate_gms" -->will print the value 10000"
+printf 'echo "$gold_rate_gms" -->will print the value 10000'
 echo
 echo
 echo "that's all"
