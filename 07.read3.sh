@@ -41,5 +41,3 @@ read -s -p "4.who is the king of cricket: " king
 echo ""
 
 echo "A= king $king"
-
-echo ""
