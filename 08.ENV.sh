@@ -2,6 +2,7 @@
 
 # using ENV variables from the shell
 
+echo
 echo "type the below syntax in the shell"
 echo
 echo "export gold_rate_gms=10000"
