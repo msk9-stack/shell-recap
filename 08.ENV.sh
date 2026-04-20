@@ -10,6 +10,7 @@ echo
 echo "then type below syntax"
 echo
 echo 'echo "$gold_rate_gms"'
+echo
 echo "you will see 10000"
 echo
 echo "here: -->"
