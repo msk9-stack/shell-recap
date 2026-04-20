@@ -36,7 +36,7 @@ echo "A= the highest score ever made in the odi history was: $score"
 
 echo ""
 
-read -s -p "who is the king of cricket: " king
+read -s -p "4.who is the king of cricket: " king
 
 echo ""
 
