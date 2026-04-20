@@ -18,4 +18,4 @@ echo "the highest score ever made in the odi history was $score"
 
 read -s -p "who is the king of cricket: " king
 
-echo "$king kohli"
+echo "king $king"
