@@ -35,7 +35,5 @@ echo
 echo "$password"
 echo
 echo
-printf "for ENV try the export syntax in the shell"
-echo
-echo
+printf 'for ENV try the export syntax in the shell'
 
