@@ -6,7 +6,7 @@ echo
 printf  "to pass all the arguments: $@\n"
 echo 
 
-printf  "to pass all the arguments: $*\n"
+printf  "to allow all the arguments as one string: $*\n"
 echo
 
 printf  "to print the script name: $0\n"
