@@ -21,11 +21,11 @@ echo
 printf "to find which directory we are currently in(present working directory): $PWD\n"
 echo 
 
-printf "to find the PID of the file: $$\n"
+printf "to find the PID of the script: $$\n"
 echo 
 
 sleep 50 &
 
-printf "to find last PID of the file: $!\n"
+printf "to find last PID of the script: $!\n"
 echo 
 
