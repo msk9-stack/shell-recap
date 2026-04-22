@@ -15,7 +15,7 @@ echo
 END_TIME=$(date +%s)
 echo
 
-TOTAL_TIME=$((START_TIME-END_TIME))
+TOTAL_TIME=$((END_TIME-START_TIME))
 echo
 
 echo "the total duration of the script is: $TOTAL_TIME"
