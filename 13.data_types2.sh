@@ -1,15 +1,15 @@
 #!/bin/bash
 
-read -s -p server_name "Enter server name: "
-echo "server name is: $server_name"
+read -s -p "Enter server name: "
+echo "server name is: $# "
 echo
 
-read -s -p CPU_cores "Enter number of CPU cores: "
-echo "CPU cores: $CPU_cores"
+read -s -p "Enter number of CPU cores: "
+echo "CPU cores: $# "
 echo
 
-read -s -p memory "Enter memory in GB: "
-echo "memory in GB: $memory"
+read -s -p "Enter memory in GB: "
+echo "memory in GB: $# "
 echo
 
 SERVER_NAME=jklx1
