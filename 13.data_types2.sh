@@ -19,14 +19,15 @@ echo
 
 TOTAL_CAPACITY=$(($SERVER_NAME+$CPU+$MEMORY))
 echo
+echo "total capacity: $TOTAL_CAPACITY"
 
 SERVICES=("nginx" "docker" "jenkins")
 echo
 
-echo "{all services[@]}"
+echo "all services: ${SERVICES[@]}"
 echo
 
-echo "{first service[0]}"
+echo "first service: ${SERVICES[0]}"
 echo
 
 if [ $TOTAL_CAPACITY -gt 20 ]; then
