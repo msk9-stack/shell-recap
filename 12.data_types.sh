@@ -9,11 +9,21 @@ ALL_ROUNDERS=4
 GAME=cricket
 echo
 
-SUM=$(($BATTERS+$BOWLERS+$ALL_ROUNDERS+GAME))
+TOTAL=$(($BATTERS+$BOWLERS+$ALL_ROUNDERS+GAME))
 echo
+
+echo "toatal: $TOTAL "
 
 BATTER_NAMES=("ROHIT" "KOHLI" "SREYAS" "TILAK")
 echo
 
-echo "BATTERS: ${BATTER_NAMES(0)} "
+echo "BATSMAEN: ${BATTER_NAMES[@]}"
+echo
+echo "OPENER1: ${BATTER_NAMES[0]}"
+echo
+echo "OPENER2: ${BATTER_NAMES[1]}"
+echo
+echo "ONE_DOWN: ${BATTER_NAMES[2]}"
+echo
+echo "TWO_DOWN: ${[BATTER_NAMES[3]}"
 echo
