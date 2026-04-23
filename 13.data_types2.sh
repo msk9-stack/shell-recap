@@ -1,7 +1,7 @@
 #!/bin/bash
 
-read -s -p name "Enter server name: "
-echo "server name is: $name"
+read -s -p "Enter server name: "
+echo "server name is: $* "
 echo
 
 read -s -p "Enter number of CPU cores: "
