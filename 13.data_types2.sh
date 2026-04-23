@@ -17,7 +17,7 @@ CPU=2
 MEMORY=20
 echo
 
-TOTAL_CAPACITY=$(($CPU+$MEMORY))
+TOTAL_CAPACITY=$(($SERVER_NAME+$CPU+$MEMORY))
 echo
 
 SERVICES=("nginx" "docker" "jenkins")
