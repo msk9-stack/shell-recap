@@ -5,7 +5,11 @@ echo "***server name: $NAME *********"
 echo
 
 uptime
+echo
+
 df -h /
+echo
+
 free -m
 echo
 
