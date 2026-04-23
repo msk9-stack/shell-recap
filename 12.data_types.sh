@@ -2,6 +2,8 @@
 
 echo "this script will demonstrate what are the date types and how they work"
 echo
+printf "if we take creicketer's as an examples, let's see below\n"
+echo
 
 BATTERS=4
 BOWLERS=3
@@ -12,7 +14,7 @@ echo
 TOTAL=$(($BATTERS+$BOWLERS+$ALL_ROUNDERS+GAME))
 echo
 
-echo "toatal: $TOTAL "
+echo "toatal PLAYERS: $TOTAL "
 
 BATTER_NAMES=("ROHIT" "KOHLI" "SREYAS" "TILAK")
 echo
