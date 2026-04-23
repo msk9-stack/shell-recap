@@ -28,7 +28,7 @@ echo
 echo "$available memory: $AVAILABLE_MEMORY"
 echo
 
-if [ "$AVAILABLE_MEMORY -gt 80% ]; then
+if [ "$AVAILABLE_MEMORY" -gt 80% ]; then
 	echo "Disk is almost full"
 else
 	echo "Disk is healthy"
