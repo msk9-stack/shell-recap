@@ -16,10 +16,10 @@ echo
 system_load=uptime
 echo
 
-disk_usage=df -h /
+disk_usage=(df -h /)
 echo
 
-memory=free -m
+memory=(free -m)
 echo
 
 AVAILABLE_MEMORY=$(($memory-$disk_usage))
