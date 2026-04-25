@@ -14,7 +14,7 @@ echo "disk usage is: $DISK_USAGE"
 echo
 
 if [ $DISK_USAGE -lt 70 ]; then
-	echo "Disk Warning $"
+	echo "Disk Warning"
 else
 	echo "Disk OK"
 fi
@@ -24,7 +24,7 @@ echo "available memory is: $AVAILABLE_MEMORY
 echo
 
 if [ $AVAILABLE_MEMORY -lt 500 ]; then
-	echo "Memory Low "
+	echo "Memory Low"
 else
 	echo "Memory OK"
 fi
