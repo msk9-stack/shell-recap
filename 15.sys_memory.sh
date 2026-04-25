@@ -23,8 +23,3 @@ echo
 echo "available memory is: $AVAILABLE_MEMORY
 echo
 
-if [ $AVAILABLE_MEMORY -lt 500 ]; then
-	echo "Memory Low"
-else
-	echo "Memory OK"
-fi
