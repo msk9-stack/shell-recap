@@ -33,10 +33,10 @@ echo
 
 TOOLS=("CICD" "docker" "kuberneties")
 
-echo "TOOLS: {TOOLS[@]}
+echo "TOOLS: ${TOOLS[@]}
 echo
 
-echo "TOOLS: {TOOLS[0]}"
+echo "first tool: ${TOOLS[0]}"
 echo
 
 
