@@ -4,11 +4,9 @@ printf '******user info**********'
 echo
 
 read -p "Enter your name: $NMAE "
-echo "Name: $NAME"
 echo
 
-read p "Enter your age: $AGE "
-echo "Age: $AGE"
+read -p "Enter your age: $AGE "
 echo
 
 printf '*******system info********'
