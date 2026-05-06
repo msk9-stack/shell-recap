@@ -12,6 +12,8 @@ echo
 
 read -p "enter the pakage: " pakage_name
 
+sudo dnf install $pakage_name -y
+
 if [ $? -eq 0 ]; then
 	echo "package installed successfully"
 else
