@@ -21,7 +21,7 @@ echo "user: $USER"
 echo "pwd: $PWD"
 echo "hostname: $HOSTNAME"
 
-if [ $AGE -gt 25 ]; then
+if [ $AGE -eq 25 ]; then
 	echo "Experienced professional"
 else
 	echo "Young professional"
