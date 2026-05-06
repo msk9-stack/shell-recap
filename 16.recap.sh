@@ -23,7 +23,7 @@ echo "pwd: $PWD"
 echo "hostname: $HOSTNAME"
 echo
 
-if [ $AGE -gt 25 ]; then
+if [ "$AGE" -gt 25 ]; then
 	echo "experienced professional"
 else
 	echo "young professional"
@@ -33,7 +33,7 @@ echo
 
 TOOLS=("CICD" "docker" "kuberneties")
 
-echo "TOOLS: ${TOOLS[@]}
+echo "TOOLS: ${TOOLS[@]}"
 echo
 
 echo "first tool: ${TOOLS[0]}"
