@@ -3,8 +3,8 @@
 USERID=$(id -u)
 echo
 
-if [ $USERID -eq 0 ]; then
-	echo "package will be installed"
+if [ $USERID -ne 0 ]; then
+	echo "ERROR: package will be installed only by root user"
 	exit 1
 fi
 
@@ -12,7 +12,7 @@ echo
 
 read -p "enter the pakage: " pakage_name
 
-sudo dnf install $pakage_name -y
+dnf install $pakage_name -y
 
 if [ $? -eq 0 ]; then
 	echo "package installed successfully"
