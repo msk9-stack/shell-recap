@@ -12,7 +12,7 @@ echo
 printf '*******system info********'
 echo
 
-USER=$(user)
+USER=$(whoami)
 PWD=$(pwd)
 HOSTNAME=$(hostname)
 echo
