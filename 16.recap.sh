@@ -1,15 +1,16 @@
-#!bin/bash
+#!/bin/bash
 
-printf '******user info**********'
+echo
+printf '*****user info*****\n'
 echo
 
-read -p "Enter your name: $NAME "
+read -p "enter your name: " NAME
 echo
 
-read -p "Enter your age: $AGE "
+read -p "enter your age: " AGE
 echo
 
-printf '*******system info********'
+prinf '******system info******\n'
 echo
 
 USER=$(whoami)
@@ -20,23 +21,23 @@ echo
 echo "user: $USER"
 echo "pwd: $PWD"
 echo "hostname: $HOSTNAME"
+echo
 
-if [ $AGE -eq 25 ]; then
-	echo "Experienced professional"
+if [ $AGE -gt 25 ]; then
+	echo "experienced professional"
 else
-	echo "Young professional"
+	echo "young professional"
 fi
 
 echo
 
-printf '*******expertise in********'
+TOOLS=("CICD" "docker" "kuberneties")
+
+echo "TOOLS: {$TOOLS[@]}
 echo
 
-TOOLS=("linux" "docker" "jenkins")
+echo "TOOLS: {$TOOLS[0]}
 echo
 
-echo "TOOLS: $@"
-echo
 
-echo "First tool: $1"
-echo
+
