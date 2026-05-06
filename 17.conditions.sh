@@ -4,10 +4,7 @@ echo
 printf '***conditions***\n'
 echo
 
-printf "-lt\n"
-printf "-gt\n"
-printf "-eq\n"
-printf "-ne\n"
+printf '%s\n' '-ln' '-eq' '-ne' '-gt'
 echo
 
 NUMBER=$1
