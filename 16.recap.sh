@@ -12,14 +12,14 @@ echo
 printf '*******system info********'
 echo
 
-USER=$(user)
+USER=$(id)
 PWD=$(pwd)
 HOSTNAME=$(hostname)
 echo
 
 echo "user: $USER"
 echo "pwd: $PWD"
-echo "hostname: $hostname"
+echo "hostname: $HOSTNAME"
 
 if [ "$AGE" -gt 25 ]; then
 	echo "Experienced professional"
