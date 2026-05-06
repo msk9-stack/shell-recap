@@ -10,7 +10,7 @@ echo
 read -p "enter your age: " AGE
 echo
 
-prinf '******system info******\n'
+printf '******system info******\n'
 echo
 
 USER=$(whoami)
@@ -33,10 +33,10 @@ echo
 
 TOOLS=("CICD" "docker" "kuberneties")
 
-echo "TOOLS: {$TOOLS[@]}
+echo "TOOLS: ${TOOLS[@]}
 echo
 
-echo "TOOLS: {$TOOLS[0]}
+echo "TOOLS: ${TOOLS[0]}"
 echo
 
 
