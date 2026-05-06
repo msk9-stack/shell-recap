@@ -3,7 +3,7 @@
 printf '******user info**********'
 echo
 
-read -p "Enter your name: $NMAE "
+read -p "Enter your name: $NAME "
 echo
 
 read -p "Enter your age: $AGE "
@@ -12,7 +12,7 @@ echo
 printf '*******system info********'
 echo
 
-USER=$(id)
+USER=$(user)
 PWD=$(pwd)
 HOSTNAME=$(hostname)
 echo
@@ -38,5 +38,5 @@ echo
 echo "TOOLS: $@"
 echo
 
-echo "First tool: $0"
+echo "First tool: $1"
 echo
