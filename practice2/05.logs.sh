@@ -29,27 +29,27 @@ echo
 
 VALIDATE(){
 	if [ $1 -ne 0 ]; then
-		echo -e "error: $2 failed to install...INSTALLATION $R FAILED $N" | tee -a $log_file
+		echo -e "error: $2 failed to install...INSTALLATION ${R}FAILED${N}" | tee -a $log_file
 	else
-		echo -e "success: $2 installed....INSTALLATION $G COMPLETED $N" | tee -a $log_file
+		echo -e "success: $2 installed....INSTALLATION ${G}COMPLETED${N}" | tee -a $log_file
 	fi
 }
 
 echo
 
 for package in "$@"
-	do
-		dnf list installed $package &>>$log_file
+do
+	dnf list installed $package &>>"$log_file"
 		
-		if [ $? -ne 0 ]: then
-			echo "$package is installing..." | tee -a $log_file
-			dnf install $package -y &>>$log_file
-			VALIDATE $? "$package"
-		else
-			echo "$package already installed..$Y skipping... $N" | tee -a $log_file
-		fi
-	done
+	if [ $? -ne 0 ]: then
+		echo "$package is installing..." | tee -a "$log_file"
+		dnf install $package -y &>>$log_file
+		VALIDATE $? "$package"
+	else
+		echo -e "$package already installed..${Y}skipping...${N}" | tee -a "$log_file"
+	fi
+done	
 	
 echo
-echo "script execution completed at: $(date)" | tee -a $log_file
+echo "script execution completed at: $(date)" | tee -a "$log_file"
 echo
