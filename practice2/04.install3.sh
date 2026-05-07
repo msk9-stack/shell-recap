@@ -19,14 +19,22 @@ check(){
 		echo "error: $2 installation failed"
 		exit 1
 	else
-		echo "sucess: $2 installed successfully"
+		echo "sucess: $2 installed $R successfully $N"
 	fi
 }
 
 echo 
 
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
+echo
+
 for software in "$@"
-do
+do  
+    dnf installed $software -y
+    check $? "$software"
 	dnf install $software -y
 	check $? "$software"
 done
