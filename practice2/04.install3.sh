@@ -19,7 +19,7 @@ check(){
 		echo "error: $2 installation failed"
 		exit 1
 	else
-		echo "sucess: $2 installed ${R}successfully${N}"
+		echo -e "sucess: $2 installed ${R}successfully${N}"
 	fi
 }
 
