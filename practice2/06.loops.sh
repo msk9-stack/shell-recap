@@ -6,11 +6,14 @@ echo
 
 echo
 echo "script started executing at: $(date)" | tee -a $LOG_FILE
+echo
 
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
+
+echo 
 
 USERID=$(id -u)
 
@@ -19,11 +22,17 @@ if [ $USERID -ne 0 ]; then
 	exit 1
 fi
 
+echo
+
 LOG_FOLDER="/var/log/loops_logs"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.logs"
 
+echo
+
 mkdir -p $LOG_FOLDER
+
+echo
 
 VALIDATE(){
 	if [ $1 -ne 0 ]; then
