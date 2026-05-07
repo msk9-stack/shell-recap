@@ -25,10 +25,6 @@ check(){
 
 echo
 
-read -p "enter the script name: " script
-
-echo
-
 dnf install $script -y
 check $? "$script"
 
