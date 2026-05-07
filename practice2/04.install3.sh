@@ -25,10 +25,10 @@ check(){
 
 echo 
 
-read -p "enter the script name: " script
-echo
-
-dnf install $script -y
-check $? "$script"
+for software in "$@"
+do
+	dnf install $software -y
+	check $? "$software"
+done
 
 echo
