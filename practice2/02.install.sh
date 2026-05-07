@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo
-USERID=$(id u)
+USERID=$(id -u)
 echo
 
 if [ "$USERID" -ne 0 ]; then
