@@ -19,7 +19,7 @@ fi
 echo
 
 log_folder="/var/log/shell-logs"
-script_name="( echo $0 | cut -d "." -f1 )"
+script_name=$( echo $0 | cut -d "." -f1 )
 log_file="$log_folder/$script_name.log"
 
 echo
