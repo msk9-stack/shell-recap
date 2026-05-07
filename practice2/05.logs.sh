@@ -19,19 +19,19 @@ fi
 echo
 
 log_folder="/var/log/shell-logs"
-script_name="( echo $0 | cut -d "." -f2 )"
-log_file="$log_folder/$script_name"
+script_name="( echo $0 | cut -d "." -f1 )"
+log_file="$log_folder/$script_name.log"
 
 echo
-mkdir -p $log_file
+mkdir -p $log_folder
 echo "script started executing at: $(date)" | tee -a $log_file
 echo
 
 VALIDATE(){
 	if [ $1 -ne 0 ]; then
-		echo "error: $2 failed to install...INSTALLATION $R FAILED $N" | tee -a $log_file
+		echo -e "error: $2 failed to install...INSTALLATION $R FAILED $N" | tee -a $log_file
 	else
-		echo "success: $2 installed....INSTALLATION $G COMPLETED $N" | tee -a $log_file
+		echo -e "success: $2 installed....INSTALLATION $G COMPLETED $N" | tee -a $log_file
 	fi
 }
 
@@ -44,7 +44,7 @@ for package in "$@"
 		if [ $? -ne 0 ]: then
 			echo "$package is installing..." | tee -a $log_file
 			dnf install $package -y &>>$log_file
-			VALIDATE @? "$package"
+			VALIDATE $? "$package"
 		else
 			echo "$package already installed..$Y skipping... $N" | tee -a $log_file
 		fi
