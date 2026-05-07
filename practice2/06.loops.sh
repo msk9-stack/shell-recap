@@ -36,9 +36,9 @@ echo
 
 VALIDATE(){
 	if [ $1 -ne 0 ]; then
-		echo "errpr: the script $2 ${R}can not be installed${N}" | tee -a $LOG_FILE
+		echo -e "error: the script $2 ${R}can not be installed${N}" | tee -a $LOG_FILE
 	else
-		echo "success: the script $2 ${G}will be installed${N}" | tee -a $LOG_FILE
+		echo -e "success: the script $2 ${G}will be installed${N}" | tee -a $LOG_FILE
 	fi
 }
 
@@ -47,9 +47,9 @@ echo
 for package in "$@"
 do
 	if [ $? -ne 0 ]; then
-		echo "error: $package ${R}failed${N} to install" | tee -a $LOG_FILE
+		echo -e "error: $package ${R}failed${N} to install" | tee -a $LOG_FILE
 		dnf list installed $package 
-		echo "the $package already intalled...${Y}sSKIPPING${N}" | tee -a $LOG_FILE
+		echo -e "the $package already intalled...${Y}sSKIPPING${N}" | tee -a $LOG_FILE
 	else
 		echo "$package is installing.........." | tee -a $LOG_FILE
 		dnf install @package -y &>>$LOG_FILE
