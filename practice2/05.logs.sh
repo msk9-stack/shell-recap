@@ -41,7 +41,7 @@ for package in "$@"
 do
 	dnf list installed $package &>>"$log_file"
 		
-	if [ $? -ne 0 ]: then
+	if [ $? -ne 0 ]; then
 		echo "$package is installing..." | tee -a "$log_file"
 		dnf install $package -y &>>$log_file
 		VALIDATE $? "$package"
