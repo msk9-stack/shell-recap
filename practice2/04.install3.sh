@@ -33,8 +33,6 @@ echo
 
 for software in "$@"
 do  
-    dnf installed $software -y
-    check $? "$software"
 	dnf install $software -y
 	check $? "$software"
 done
