@@ -24,7 +24,7 @@ log_file="$log_folder/$script_name.log"
 
 echo
 mkdir -p $log_folder
-echo "script started executing at: $(date)" | tee -a $log_file
+echo "script started executing at: $(date)" | tee -a "$log_file"
 echo
 
 VALIDATE(){
