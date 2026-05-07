@@ -46,15 +46,19 @@ echo
 
 for package in "$@"
 do
-	if [ $? -ne 0 ]; then
-		echo -e "error: $package ${R}failed${N} to install" | tee -a $LOG_FILE
-		dnf list installed $package 
-		echo -e "the $package already intalled...${Y}sSKIPPING${N}" | tee -a $LOG_FILE
-	else
-		echo "$package is installing.........." | tee -a $LOG_FILE
-		dnf install @package -y &>>$LOG_FILE
-		VALIDATE $? $package
-	fi
+    dnf list installed "$package" &>>"$LOG_FILE"
+
+    if [ $? -ne 0 ]; then
+
+        echo "$package is installing..." | tee -a "$LOG_FILE"
+
+        dnf install "$package" -y &>>"$LOG_FILE"
+
+        VALIDATE $? "$package"
+
+    else
+        echo -e "$package already installed... ${Y}SKIPPING${N}" | tee -a "$LOG_FILE"
+    fi
 done
 
 echo
