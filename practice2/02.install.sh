@@ -13,7 +13,7 @@ echo
 read -p "enter the script name: " script
 echo
 
-dns install $script -y
+dnf install $script -y
 echo
 
 if [ $? -eq 0 ]; then
